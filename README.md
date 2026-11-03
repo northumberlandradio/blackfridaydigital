@@ -24,13 +24,14 @@ It's plain HTML with no build step, so it works on GitHub Pages as-is.
 
 ## Turn on the booking form (one-time step)
 
-The form sends to **tommyw@mbcmedia.ca** through [FormSubmit](https://formsubmit.co), a free service for static sites.
+The form sends to **tommyw@mbcmedia.ca** through [Web3Forms](https://web3forms.com), a free form service for static sites.
 
-1. Once the page is live, fill out the form yourself as a test.
-2. FormSubmit emails tommyw@mbcmedia.ca an **activation link**. Click it.
-3. From then on, every submission arrives in that inbox as a table with the business name, contact name, email, phone, website and what they want to promote. The subject line includes the business name.
+1. Go to https://web3forms.com, enter **tommyw@mbcmedia.ca** and click **Create Access Key**.
+2. Web3Forms emails the key to that address. Copy it.
+3. In `index.html`, find `YOUR_ACCESS_KEY_HERE` and replace it with the key. Commit the change.
+4. Submit the form once yourself to test it. You'll land on the thank-you page and the request will arrive in the inbox.
 
-Submissions sent before activation are not delivered, so do this test before you share the link.
+The access key is safe to have in a public page. It can only send email to the address it was created for.
 
 ## The video
 
